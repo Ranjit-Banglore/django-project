@@ -6,7 +6,7 @@ on:
             - master
 
 jobs: 
-    test :
+    build-test :
         runs-on: ubuntu-latest
     
         steps: 
@@ -24,7 +24,7 @@ jobs:
             
             - name: Run Tests
               run: |
-                python manage.py test
+                python myproject/manage.py test
 
 
 
